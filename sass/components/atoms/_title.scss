@@ -1,0 +1,19 @@
+$component-name: title;
+
+.#{$component-name} {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--neutral);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+@media (width < $breakpoints-sm) {
+
+  .#{$component-name} {
+    font-size: 2rem;
+  }
+}

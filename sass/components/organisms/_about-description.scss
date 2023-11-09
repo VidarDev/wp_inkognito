@@ -1,0 +1,20 @@
+$component-name: about-content;
+
+.#{$component-name} {
+  margin-bottom: 5rem;
+
+  &__content {
+
+    > p {
+      font-size: 1rem;
+      line-height: 1.33;
+      color: var(--neutral);
+      text-align: justify;
+      margin-bottom: 0.5rem;
+
+      strong {
+        color: var(--brand-uno);
+      }
+    }
+  }
+}

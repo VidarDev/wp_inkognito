@@ -1,0 +1,127 @@
+$component-name: contact-form;
+
+.#{$component-name} {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  &__content {
+    margin-bottom: 3rem;
+
+    > p {
+      font-size: 1rem;
+      line-height: 1.33;
+      color: var(--neutral);
+      text-align: justify;
+      margin-bottom: 0.5rem;
+
+      strong {
+        color: var(--brand-uno);
+      }
+    }
+  }
+
+  &__container {
+
+    > div {
+      width: 80%;
+      margin-inline: auto;
+    }
+  }
+
+  .contact-form-7 {
+
+    form {
+      padding: 0 2rem;
+
+      > p {
+        margin-bottom: 1rem;
+      }
+
+      label {
+        color: var(--brand-uno);
+        font-size: 1.5rem;
+        line-height: 1.1;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+      }
+
+      input[type=text],
+      input[type=email],
+      input[type=url],
+      input[type=password],
+      input[type=search],
+      input[type=number],
+      input[type=tel],
+      input[type=range],
+      input[type=date],
+      input[type=month],
+      input[type=week],
+      input[type=time],
+      input[type=datetime],
+      input[type=datetime-local],
+      input[type=color],
+      textarea {
+        width: 100%;
+        padding: 0.5rem 0.75rem;
+        color: var(--neutral);
+        font-size: 1.25rem;
+        line-height: 1.1;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        background-color: var(--neutral-light);
+        border-color: var(--neutral-light);
+      }
+
+      button,
+      input[type=button],
+      input[type=reset],
+      input[type=submit] {
+        display: inline-flex;
+        font-size: 1.25rem;
+        line-height: 1.1;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+        padding: 0.75rem 2rem;
+        background-color: var(--neutral-transparent);
+        color: var(--neutral) !important;
+        border: 1px solid var(--brand-uno);
+
+        &:visited {
+          color: var(--neutral) !important;
+        }
+
+        &:hover, &:focus {
+          color: var(--brand-uno) !important;
+        }
+      }
+
+      .wpcf7-not-valid-tip {
+        color: var(--signal-error);
+        font-size: 1rem;
+        line-height: 1.1;
+        text-transform: none;
+      }
+    }
+  }
+}
+
+@media (width < $breakpoints-md) {
+
+  .#{$component-name} {
+
+    &__container {
+
+      > div {
+        width: 100%;
+      }
+    }
+
+    .contact-form-7 {
+
+      form {
+        padding: 0;
+      }
+    }
+  }
+}
