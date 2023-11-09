@@ -4,7 +4,7 @@
 |:----------|:--------------------|:------------|
 | WordPress | 9 November 2023     | `16`        |
 
-![image](screenshot 2.png)
+![image](screenshot.png)
 
 ## Description
 
